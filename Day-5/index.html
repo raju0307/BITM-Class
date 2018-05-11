@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <h1>Info</h1>
+
+<table>
+    <tr>
+        <td>First Name</td>
+        <td><input type="text" name="first_name" id="firstName" placeholder="First Name" maxlength="20"/></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td><input type="text" name="last_name" id="lastName" placeholder="Last Name"/></td>
+    </tr>
+    <tr>
+        <td>University</td>
+        <td><input type="text" readonly value="KIIT University" size="60" name="university_name" id="universityName" placeholder="university"/></td>
+    </tr>
+    <tr>
+        <td>Email Address</td>
+        <td><input type="email" name="email_address" id="emailAddress"/></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="password" name="password" id="password"/></td>
+    </tr>
+    <tr>
+        <td>Mobile Number</td>
+        <td><input type="number" min="0" name="mobile_number" id="mobileNumber"/></td>
+    </tr>
+    <tr>
+        <td>Date of Birth</td>
+        <td><input type="date" name="date_of_birth" id="dateOfBirth"/></td>
+    </tr>
+    <tr>
+        <td>Address</td>
+        <td><textarea name="address" id="address" rows="8" cols="30"></textarea></td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td><input type="radio" name="gender" value="male"/>Male</td>
+        <td><input type="radio" name="gender" value="female"/>Female</td>
+    </tr>
+    <tr>
+        <td>District Name</td>
+        <td>
+            <select name="district_name" id="districtName">
+                <option>----Select----</option>
+                <optgroup label="Dhaka Division">
+                <option value="Dhaka">Dhaka</option>
+                    <option value="Savar">Savar</option>
+                    <option value="Dohar">Dohar</option>
+                </optgroup>
+                <optgroup label="Khulna Division">
+                <option>Khulna</option>
+                    <option>Phultala</option>
+                    </optgroup>
+                <option>Barisal</option>
+                <option>Rajshahi</option>
+                <option>Shyllet</option>
+                <option>Chittagong</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Image</td>
+        <td><input type="file" name="image" accept="image/*" multiple id="image"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="checkbox" name="agree" value="agree" id="agree"/>I agree with all terms & conditions.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" name="button" id="button" value="Save"/></td>
+    </tr>
+</table>
+
+</body>
+</html>
