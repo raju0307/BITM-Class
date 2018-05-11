@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <!--<link rel="stylesheet" href="css/style.css">-->
+    </head>
+    <body>
+        <form action="" method="post" id="registrationForm">
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <td>
+                        <input type="text" id="firstName">
+                        <span id="firstNameError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td>
+                        <input type="text" id="lastName">
+                        <span id="lastNameError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email Address</th>
+                    <td>
+                        <input type="email" id="emailAddress">
+                        <span id="emailAddressError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td>
+                        <input type="password" id="password">
+                        <input type="checkbox" id="showHidePassword"/>Show Password
+                        <span id="passwordError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Confirm Password</th>
+                    <td>
+                        <input type="password" id="confirmPassword">
+                        <span id="confirmPasswordError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <td>
+                        <input type="number" id="phoneNumber">
+                        <span id="phoneNumberError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Male
+                        <span id="genderError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>District Name</th>
+                    <td>
+                        <select id="districtName">
+                            <option value="">---Select District Name---</option>
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Noakhali">Noakhali</option>
+                            <option value="Barishal">Barishal</option>
+                        </select>
+                        <span id="districtNameError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td>
+                        <textarea id="address"></textarea>
+                        <span id="addressError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <input type="checkbox"  name="agree" value="1">I agree with all terms & condition
+                        <span id="agreeError"></span>
+                    </td>
+                </tr><tr>
+                <th></th>
+                <td>
+                    <input type="submit" id="btn" value="submit">
+                </td>
+            </tr>
+
+            </table>
+        </form>
+
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <td><input type="text" name="first_name"  id="firstName"></td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td><input type="text" onblur="alert('hello last name')" name="last_name" id="lastName"></td>
+        </tr>
+         <tr>
+            <th >Full Name</th>
+            <td><input type="text" name="full_name" id="fullName"></td>
+        </tr>
+         <tr>
+            <th></th>
+            <td><input type="button" name="btn"  id="btn" value="Submit"></td>
+        </tr>
+
+    </table>
+    <script>
+
+        var btnElement = document.getElementById('btn');
+        btnElement.onclick =function () {
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            makeFullName(firstName  , lastName);
+        }
+
+
+        function makeFullName(firstName,lastName) {
+            var fullName = firstName + ' ' + lastName ;
+            document.getElementById('fullName').value= fullName;
+
+        }
+
+    </script>
+    <!--<script>-->
+        <!--// var i;-->
+        <!--//     //   for(i=1;i<=10;i++)-->
+        <!--//     // document.write(i + '<br/>');-->
+        <!--//-->
+        <!--//-->
+        <!--// // var data =[10,20,100,50,'Raju','Vai'];-->
+        <!--// //-->
+        <!--// // var key;-->
+        <!--// //-->
+        <!--// // for(key in data)-->
+        <!--// // {-->
+        <!--// //     document.write(data[key] +'<br/>');-->
+        <!--// // }-->
+        <!--// //-->
+        <!--//-->
+        <!--// document.write('<br/>=============<br/>')-->
+        <!--// add(1,5);-->
+        <!--// document.write('<br/>=============<br/>')-->
+        <!--// add(12,57);-->
+        <!--// document.write('<br/>=============<br/>')-->
+        <!--// add(144,335);-->
+        <!--//-->
+        <!--// function add(x,y) {-->
+        <!--//-->
+        <!--//         z=x+y ;-->
+        <!--//-->
+        <!--//     document.write(z);-->
+        <!--//-->
+        <!--// }-->
+
+
+
+
+    <!--</script>-->
+</body>
+</html>

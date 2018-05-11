@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <table >
+        <tr>
+            <th>First Name</th>
+            <td><input type="text" name="first_name"  id="firstName"></td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td><input type="text" name="last_name" id="lastName"></td>
+        </tr>
+    </table>
+    <hr/>
+    <table border="1" >
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Full Name</th>
+        </tr>
+        <tr>
+          <td height="50" id ="res1"></td>
+          <td id="res2"></td>
+          <td id="res3"></td>
+        </tr>
+    </table>
+
+    <script>
+
+            var firstName = document.getElementById('firstName');
+            var lastName = document.getElementById('lastName');
+
+            firstName.onkeyup = function () {
+
+                var firstNameValue = document.getElementById('firstName').value ;
+
+                document.getElementById('res1').innerHTML = firstNameValue ;
+
+            };
+
+            lastName.onkeyup = function () {
+
+                var lastNameValue = document.getElementById('lastName').value ;
+
+                document.getElementById('res2').innerHTML = lastNameValue ;
+
+            };
+
+            lastName.onblur = function () {
+
+                var firstNameValue = document.getElementById('firstName').value;
+                var lastNameValue = document.getElementById('lastName').value;
+
+                document.getElementById('res3').innerHTML = firstNameValue + ' ' + lastNameValue ;
+
+            }
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

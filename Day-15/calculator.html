@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>First Number</th>
+            <td><input type="number" id="firstNumber"></td>
+        </tr>
+        <tr>
+            <th>Second Number</th>
+            <td><input type="number" id="secondNumber"></td>
+        </tr>
+        <tr>
+            <th>Result</th>
+            <td><input type="number" id="result"></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <input type="button" id="addition" value="+">
+                <input type="button" id="subtraction" value="-">
+                <input type="button" id="multiplication" value="*">
+                <input type="button" id="division" value="/">
+                <input type="button" id="reminder" value="%">
+            </td>
+        </tr>
+    </table>
+    <script>
+
+        var firstNumber= Number(document.getElementById('firstNumber').value) ;
+        var secondNumber= Number(document.getElementById('secondNumber').value) ;
+
+        var addition = document.getElementById('addition');
+        var subtraction = document.getElementById('subtraction');
+        var multiplication = document.getElementById('multiplication');
+        var division = document.getElementById('division');
+        var reminder = document.getElementById('reminder');
+
+        addition.onclick = function(){
+
+
+            var result1 = firstNumber + secondNumber ;
+
+            document.getElementById('result').value = result1 ;
+        }
+
+
+        subtraction.onclick = function(){
+
+
+            var result2 = firstNumber - secondNumber ;
+
+            document.getElementById('result').value = result2 ;
+        }
+
+
+        multiplication.onclick = function(){
+
+
+            var result3 = (firstNumber*secondNumber) ;
+
+            document.getElementById('result').value = result3 ;
+        }
+
+
+        division.onclick = function(){
+
+
+            var result4 = (firstNumber/secondNumber) ;
+
+            document.getElementById('result').value = result4 ;
+        }
+
+        reminder.onclick = function(){
+
+            var result5 = (firstNumber%secondNumber) ;
+
+            document.getElementById('result').value = result5 ;
+        }
+
+
+    </script>
+</body>
+</html>
