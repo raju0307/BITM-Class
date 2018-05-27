@@ -1,0 +1,72 @@
+.img-responsive{
+    height: 100%;
+    width: 100%;
+}
+.slider-position{
+    margin-top: 50px;
+}
+
+.menu-height{height: 50px;}
+.slider-height{height: 600px;}
+
+
+.ptb-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.para-1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.section-three{
+    background-image: url( "../images/sc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-attachment: fixed;
+}
+
+
+.navbar-image{
+    height: 50px ;
+    /*width: 100px;*/
+}
+
+.sec-one{
+    background-color: whitesmoke;
+}
+
+.section-one{
+    background-color:whitesmoke;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.section-two{
+    background-color:ghostwhite;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+@media screen and (min-width: 450px){
+    .col-xs-1{ width: 8.33%;}
+    .col-xs-2{ width: 16.66%}
+    .col-xs-3{ width: 25%;}
+    .col-xs-4{ width: 33.33%}
+    .col-xs-5{ width: 41.66%}
+    .col-xs-6{ width: 50%;}
+    .col-xs-7{ width: 58.33%}
+    .col-xs-8{ width: 66.66%}
+    .col-xs-9{ width: 75%}
+    .col-xs-10{ width: 83.33%}
+    .col-xs-11{ width: 91.66%}
+    .col-xs-12{ width: 100%}
+}
+
+
